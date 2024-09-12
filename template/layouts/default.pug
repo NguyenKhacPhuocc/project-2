@@ -1,0 +1,92 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://cdn-icons-png.flaticon.com/512/919/919827.png" rel="icon" type="image/x-icon")
+
+    block title
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+    link(rel="stylesheet" href="assets/css/style.css")
+  body 
+    //- header
+    header(class="header")
+      div(class="container")
+        div(class="header__wrap")
+          //- Logo
+          button(class="header__menu-mobile")
+            i(class="fa-solid fa-bars")
+          div(class="header__logo")
+            a(href="index.html")
+              img(src="assets/images/logo.svg" alt="Monito")
+          //- menu
+          nav(class="header__menu")
+            ul
+              li
+                a(href="index.html") Trang Chủ
+              li
+                a(href="#") Danh Mục
+              li
+                a(href="#") Giới Thiệu
+              li
+                a(href="#") Liên Hệ
+          //- Search
+          button(class="header__search-mobile")
+            i(class="fa-solid fa-magnifying-glass")
+          form(action="#" class="header__form")
+            input(name="keyword" placeholder="Nhập từ khóa...")
+            button
+              i(class="fa-solid fa-magnifying-glass")
+            //- Button
+          a(href="#" class="button") Tham Gia Cộng Đồng
+    //- end header
+    
+    //- main
+    block main
+    //- end main
+
+    //- footer
+    footer(class="footer")
+      div(class="container")
+        div(class="footer__top")
+          div(class="footer__content") Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+          div(class="footer__form")
+            input(type="email" name="" placeholder="Nhập email của bạn")
+            button Đăng Ký Ngay
+        div(class="footer__middle")
+          nav(class="footer__links")
+            ul
+              li
+                a(href="#") Trang Chủ
+              li
+                a(href="#") Danh Mục
+              li
+                a(href="#") Giới Thiệu
+              li
+                a(href="#") Liên Hệ
+          nav(class="footer__socials")
+            ul
+              li
+                a(href="#" target="_blank")
+                  i(class="fa-brands fa-facebook")
+              li
+                a(href="#" target="_blank")
+                  i(class="fa-brands fa-twitter")
+              li
+                a(href="#" target="_blank")
+                  i(class="fa-brands fa-instagram")
+              li
+                a(href="#" target="_blank")
+                  i(class="fa-brands fa-youtube")
+        div(class="footer__bottom")
+          div(class="footer__copyright") © 2024 28Tech. All rights reserved.
+          div(class="footer__logo")
+            a(href="index.html")
+              img(src="assets/images/logo.svg" alt="Monito")
+          nav(class="footer__termsofservice")
+            ul
+              li
+                a(href="#") Điều khoản dịch vụ
+              li
+                a(href="#") Chính sách bảo mật</a>
+    //- end footer
